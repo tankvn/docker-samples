@@ -3,22 +3,13 @@
   "version": "1.0.0",
   "description": "Simple Docker samples",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["docker","nodejs","mongodb"],
   "author": "TAn",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tankvn/docker-samples.git"
-  },
-  "keywords": [
-    "docker",
-    "nodejs",
-    "mongodb"
-  ],
-  "bugs": {
-    "url": "https://github.com/tankvn/docker-samples/issues"
-  },
-  "homepage": "https://github.com/tankvn/docker-samples#readme"
+  "homepage": "https://github.com/tankvn/docker-samples#readme",
+  "license": "ISC"
 }
