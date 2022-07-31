@@ -25,7 +25,8 @@ var databases = [];
 // Creating a server
 const app = express();
 app.get('/', (req, res) => {
-	res.send('Hello World: ' + status);
+	// Write response as Html(text)
+	res.set('Content-Type', 'text/html');
 	if (databases.length > 0) {
 		let htmlStr = 'Databases:<ul>';
 		databases.forEach(db => {
