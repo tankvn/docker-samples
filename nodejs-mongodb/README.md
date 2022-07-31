@@ -36,3 +36,8 @@ From the directory in which the file resides, run the docker-compose command.
 ```bat
 docker compose up
 ```
+
+If you would like to re-build it add --build flag, detach mode add -d, it looks like:
+```bat
+docker-compose up -d --build
+```
