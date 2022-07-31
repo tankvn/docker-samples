@@ -2,11 +2,13 @@
 const http = require('http');
 
 // Lets require/import the mongodb native drivers.
-var mongodb = require('mongodb');
+const mongodb = require('mongodb');
 
 // Connection URI
 // const url = "mongodb://localhost:27017/";
 const url = "mongodb://mongo_db:27017/";
+
+// Constants
 const hostname = '0.0.0.0';
 const port = 8080;
 
@@ -37,12 +39,12 @@ const server = http.createServer((req, res) => {
 	}
 });
 
-// Server listening on port number 3000
+// Server listening on port number 8080
 server.listen(port, hostname, () => {
 	console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-async function listDatabases(db) {
+async function listDatabases(client) {
 	let databasesList = await client.db().admin().listDatabases();
 	databases = databasesList.databases;
 };

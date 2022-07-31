@@ -14,7 +14,7 @@ Instantly initialize a project
 npm init --yes
 ```
 
-Then install Express and  by executing the following command on a terminal.
+Then install Express by executing the following command on a terminal.
 ```bat
 npm install express --save
 ```
