@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  webapp:
+    image: node_express
+    build:
+      # Location to the dockerfile
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: node-express
+    ports:
+      - '8080:8080'
+    depends_on:
+      - mongo_db
+  mongo_db:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - '27017:27017'
